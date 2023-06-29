@@ -1,0 +1,111 @@
+body {
+    background-color: rgb(119, 119, 119);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    float: left;
+    width: 4%;
+    height: 7%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background-color: purple;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    background-color: rgb(192, 113, 192);
+}
+
+.menu-toggle {
+    display: none;
+    float: right;
+    margin-right: 2rem;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.buttons {
+    float: right;
+    margin-top: 9rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.clear {
+    clear: both;
+}
+
+.buttons button {
+    display: block;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: rgb(192, 113, 192);
+}
+
+.separator {
+    border-top: 1px solid black;
+    margin: 2rem;
+}
+
+.content {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.left-section {
+    width: 50%;
+}
+
+.right-section {
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+}
+
+.right-section {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.left-section iframe {
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.right-section .card {
+    background-color: transparent;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.right-section .card:hover {
+    transform: scale(1.1);
+    background-color: rgb(192, 113, 192);
+}
+
+/* Estilos para el menú desplegable */
+.menu-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+-------------------
